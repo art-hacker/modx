@@ -5,8 +5,8 @@ error_reporting(E_ALL&~E_NOTICE);
 define("BASE_PATH", "../../../");
 
 $allowedSizes = array(
-  'w' => array(150,230,64,null),
-  'h' => array(95,64,null)
+  'w' => array(400,150,230,64,null),
+  'h' => array(275,95,64,null)
 );
 
 $path = BASE_PATH . "thumbs/".$_REQUEST["size"]."/".$_REQUEST["path"];

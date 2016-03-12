@@ -31,6 +31,8 @@ RewriteRule .* - [F,L]
 #RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
 #RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
+RewriteRule ^thumbs/(.*?)/(.*\.(png|gif|jpe{0,1}g))$ assets/snippets/phpThumb/handler.php?size=$1&path=$2&ext=$3 [NC,L,QSA]
+
 # Exclude /assets and /manager directories and images from rewrite rules
 RewriteRule ^(manager|assets)/.*$ - [L]
 RewriteRule \.(jpg|jpeg|png|gif|ico)$ - [L]
