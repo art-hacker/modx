@@ -309,8 +309,11 @@ $(function () {
 /* ==============================================
 	Google Map
 =============================================== */
-var e=new google.maps.LatLng(43.7726657,11.2043491),
-		o={zoom:14,center:new google.maps.LatLng(43.7726657,11.2043491),
+var latitude = 55.58287199999999;
+var longitude = 37.62749000000008;
+
+var e=new google.maps.LatLng(latitude,longitude),
+		o={zoom:14,center:new google.maps.LatLng(latitude,longitude),
 		mapTypeId:google.maps.MapTypeId.ROADMAP,
 		mapTypeControl:!1,
 		scrollwheel:!1,
@@ -324,7 +327,7 @@ var e=new google.maps.LatLng(43.7726657,11.2043491),
 		
 		t=new google.maps.MarkerImage("img/pin.png",new google.maps.Size(40,70),
 		new google.maps.Point(0,0),new google.maps.Point(20,55)),
-		i=new google.maps.LatLng(43.7726657,11.2043491),
+		i=new google.maps.LatLng(latitude,longitude),
 		p=new google.maps.Marker({position:i,map:n,icon:t,zIndex:3});
 		google.maps.event.addListener(p,"click",function(){a.open(n,p)}),
 		$(".button-map").click(function(){$("#google-map").slideToggle(500,function(){google.maps.event.trigger(n,"resize"),n.setCenter(e)}),
