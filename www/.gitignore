@@ -1,3 +1,4 @@
 /assets/cache/*
-
+/assets/.thumbs/*
 /manager/includes/config.inc.php
+
