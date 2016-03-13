@@ -9,13 +9,13 @@
 * Version: 1.0
 */
 
-@import url("normalize.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/normalize.css*/);
-@import url("foundation.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/foundation.css*/); 
-@import url("responsive-nav.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/responsive-nav.css*/);
-@import url("font-awesome.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/font-awesome.css*/);
-@import url("revolution.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/revolution.css*/);
-@import url("flexnav.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/flexnav.css*/);
-@import url("magnific-popup.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/magnific-popup.css*/);
-@import url("YTPlayer.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/YTPlayer.css*/);
-@import url("layout.css"/*tpa=http://tangram.mordorthemes.com/light-version/css/layout.css*/);
+@import url("normalize.css");
+@import url("foundation.css"); 
+@import url("responsive-nav.css");
+@import url("font-awesome.min.css");
+@import url("revolution.css");
+@import url("flexnav.css");
+@import url("magnific-popup.css");
+@import url("YTPlayer.css");
+@import url("layout.css");
 
