@@ -1,3 +1,5 @@
 /assets/cache/*
-
+/assets/.thumbs/*
+/thumbs/*
 /manager/includes/config.inc.php
+desktop.ini

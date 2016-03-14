@@ -1,0 +1,55 @@
+.cm-s-npp{font:10pt 'Courier New'}
+.CodeMirror-code pre{font-weight:bold}
+div.CodeMirror span.CodeMirror-matchingbracket{color:red;} 
+
+.cm-s-npp span.cm-modxUrl,.cm-s-npp span.cm-modxSnippet,.cm-s-npp span.cm-modxPlaceholder,.cm-s-npp span.cm-modxVariable{text-shadow:none;}
+
+.cm-s-npp span.cm-keyword {color: blue;}
+
+              .cm-s-npp span.cm-atom {color: #00ff00; font-size:20px!important; font-weight:bold;}
+
+.cm-s-npp span.cm-number {color: black;}
+              .cm-s-npp span.cm-def {color: #00ff00; font-size:20px!important; font-weight:bold;}
+
+.cm-s-npp span.cm-modxVariable,.cm-s-npp span.cm-variable {color: black;}
+.cm-s-npp span.cm-variable {font-weight:normal}
+
+.cm-s-npp span.cm-variable-2 {color: #000080; font-weight:normal}
+
+              .cm-s-npp span.cm-variable-3 {color: #00ff00; font-size:20px!important; font-weight:bold;}
+
+              .cm-s-npp span.cm-operator {color: #8000ff;}
+.cm-s-npp span.cm-comment {color: #008000; font-weight:normal;}
+
+.cm-modxUrl,
+.cm-modxTv,
+.cm-modxChunk,
+.cm-modxSnippet,
+.cm-modxPlaceholder,
+.cm-s-npp span.cm-string {color:#8000ff; font-weight:bold; text-shadow:none}
+
+              .cm-s-npp span.cm-string-2 {color: #00ff00; font-size:20px!important; font-weight:bold;}
+              ._____cm-s-npp span.cm-meta {color: #00ff00; font-size:20px!important; font-weight:bold;}
+              .cm-s-npp span.cm-error {color: red;}
+              .cm-s-npp span.cm-qualifier {color: #00ff00; font-size:20px!important; font-weight:bold;}
+.cm-s-npp span.cm-builtin {color: blue;}
+.cm-s-npp span.cm-bracket {color: #8000ff;}
+.cm-s-npp span.cm-tag {color: blue; font-weight:normal}
+.cm-s-npp span.cm-attribute {color:red; font-weight: normal;}
+
+
+#tabPlugin .cm-s-npp span.cm-number {color: orange;}
+#tabPlugin .cm-s-npp span.cm-attribute {color: #8000ff;}
+#tabPlugin .cm-s-npp span.cm-string {color: #808080; font-weight:normal}
+#tabPlugin .cm-s-npp span.cm-modxUrl{color: #800080;}
+#tabPlugin .cm-s-npp span.cm-modxVariable{color:#000;}
+
+#tabSnippet .cm-s-npp span.cm-number {color: orange;}
+#tabSnippet .cm-s-npp span.cm-attribute {color: #8000ff;}
+#tabSnippet .cm-s-npp span.cm-string {color: #808080; font-weight:normal}
+#tabSnippet .cm-s-npp span.cm-modxUrl{color: #800080;}
+#tabSnippet .cm-s-npp span.cm-modxVariable{color:#000;}
+
+
+
+.cm-s-npp span.cm-property {color: black;}

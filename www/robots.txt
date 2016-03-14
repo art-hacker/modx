@@ -20,7 +20,8 @@ Allow: /assets/plugins/*.js
 Allow: /assets/snippets/*.css
 Allow: /assets/snippets/*.js
 
-# Host: example.com
+User-agent: YandexImages
+Disallow: /assets/images/
 
-# For sitemaps.xml autodiscovery. Uncomment if you have one:
-# Sitemap: http://example.com/sitemap.xml
+Sitemap: http://ttstore.ru/sitemap.xml
+Host: ttstore.ru

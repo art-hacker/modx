@@ -3,6 +3,7 @@
 # including for unexpected logouts in multi-server/cloud environments
 # and especially for the first three commented out rules
 
+Options -Indexes
 #php_flag register_globals Off
 AddDefaultCharset utf-8
 #php_value date.timezone Europe/Moscow
@@ -26,10 +27,19 @@ RewriteRule .* - [F,L]
 #RewriteCond %{HTTP_HOST} !^example\.com [NC]
 #RewriteRule (.*) http://example.com/$1 [R=301,L]
 
-# without www all domains
-#RewriteCond %{HTTP_HOST} .
-#RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
-#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+# without www  all domian
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+RewriteRule ^thumbs/(.*?)/(.*\.(png|gif|jpe{0,1}g))$ assets/snippets/phpThumb/handler.php?size=$1&path=$2&ext=$3 [NC,L,QSA]
+RewriteRule ^sitemap.xml    assets/modules/sitemap/index.php        [NC,L,QSA]
+RewriteRule ^YML.xml        assets/modules/YML/yandex-market.php  [NC,L,QSA]
+RewriteRule ^WML.xml        assets/modules/YML/wikimart.php  [NC,L,QSA]
+RewriteRule ^doc/(.+)       assets/modules/orders/doc/index.php?action=$1  [NC,L,QSA]
+
+
 
 # Exclude /assets and /manager directories and images from rewrite rules
 RewriteRule ^(manager|assets)/.*$ - [L]
@@ -41,5 +51,26 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 
 # Reduce server overhead by enabling output compression if supported.
-#php_flag zlib.output_compression On
-#php_value zlib.output_compression_level 5
+php_flag zlib.output_compression On
+php_value zlib.output_compression_level 5
+
+<FilesMatch "\.(ico|css|js)$">
+  SetOutputFilter DEFLATE
+  Header set Cache-Control "max-age=290304001, public"
+  Header unset ETag
+  FileETag None
+</FilesMatch>
+
+<FilesMatch "\.(jpe?g|gif|png)$">
+  SetOutputFilter DEFLATE
+  Header set Cache-Control "max-age=290304001, public"
+  Header unset ETag
+  FileETag None
+</FilesMatch>
+<FilesMatch "\.(html|htm|php)$">
+  Header set Cache-Control "private"
+</FilesMatch>
+
+
+SetEnv MODX_BASE_PATH /var/www/site/
+#SetEnv MODX_BASE_PATH /var/www/ttstore/data/www/ttstore.ru/
