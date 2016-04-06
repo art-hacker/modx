@@ -2,6 +2,7 @@
 
 sudo apt-get install libapache2-mod-php5 -y # PHP5+Apache
 sudo a2enmod rewrite # Enabling mod_rewrite
+sudo a2enmod headers # Enabling mod_headers
 sudo aptitude install php5-gd # GD lib
 
 #Apache config
