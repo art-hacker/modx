@@ -17,3 +17,13 @@ sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again p
 sudo apt-get install php5-mysql mysql-server mysql-client -y 
 
 service apache2 restart
+
+#Hamachi
+#sudo add-apt-repository -y ppa:webupd8team/haguichi
+#wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb
+#sudo apt-get install -yf
+#sudo apt-get install -y lsb
+#sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
+#sudo apt-get install -y logmein-hamachi
+#sudo hamachi login
+#sudo hamachi do-join 330-772-195 lolipop
