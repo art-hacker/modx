@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DB_NAME="modx_db";
+DB_NAME="ttstore_db";
 DB_USER="root";
 DB_PASS="1234";
 
